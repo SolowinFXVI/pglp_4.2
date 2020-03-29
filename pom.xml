@@ -49,6 +49,13 @@
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.0.2</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>org.uvsq21400579.CalculatriceRPN</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-install-plugin</artifactId>
@@ -71,6 +78,11 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>3.1.1</version>
+      </plugin>
+      <plugin>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-maven-plugin</artifactId>
+        <version>3.1.12.2</version>
       </plugin>
     </plugins>
   </build>
